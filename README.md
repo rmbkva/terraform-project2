@@ -1,5 +1,6 @@
 # terraform-project2
 
+```hcl
 region = "us-east-2"
 vpc_name = "Project2"
 vpc_cidr = "10.0.0.0/16"
@@ -13,3 +14,4 @@ topic_name = "alarms"
 bucket_name = "kaizen-asel"
 email_address = "example@gmail.com"
 slack_webhook = "Please provide you own webhook"
+```
