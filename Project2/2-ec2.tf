@@ -23,7 +23,7 @@ resource "aws_instance" "my_ec2" {
 
   iam_instance_profile = aws_iam_instance_profile.prometheus_demo.name
 
-  user_data = templatefile("4-ec2-prom.sh.tpl",
+  user_data = templatefile("4-prom.sh.tpl",
     {
       prometheus_ver    = "2.39.1",
       node_exporter_ver = "1.4.0",
