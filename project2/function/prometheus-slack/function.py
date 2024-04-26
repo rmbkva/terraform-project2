@@ -2,7 +2,7 @@ import urllib3
 import json
 
 # Provide your own slack url
-url = "https://hooks.slack.com/services/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"
+url = ""
 http = urllib3.PoolManager()
 
 
