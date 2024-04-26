@@ -28,8 +28,8 @@ resource "aws_iam_role_policy_attachment" "prometheus_slack_basic" {
 data "archive_file" "prometheus_slack" {
   type = "zip"
 
-  source_dir  = "../terraform-project2/function/prometheus-slack"
-  output_path = "../terraform-project2/function/prometheus-slack.zip"
+  source_dir  = "../project2/function/prometheus-slack"
+  output_path = "../project2/function/prometheus-slack.zip"
 }
 
 # Upload ZIP archive with lambda to S3 bucket
